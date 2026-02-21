@@ -1,0 +1,2 @@
+onlyBuiltDependencies:
+  - '@trasherdk/posix-syslog'
