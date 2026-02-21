@@ -8,13 +8,13 @@ Provides `openlog`, `closelog`, `syslog`, `setlogmask`, and `createLogger` as a 
 ## Installation
 
 ```
-npm install posix-syslog
+npm install @trasherdk/posix-syslog
 ```
 
 ## Usage
 
 ```typescript
-import { openlog, syslog, closelog } from "posix-syslog";
+import { openlog, syslog, closelog } from "@trasherdk/posix-syslog";
 
 openlog("myprog", { pid: true, ndelay: true }, "local7");
 syslog("info", "hello, world!");
@@ -28,7 +28,7 @@ within the same process. Call `openlog()` once to set identity and options,
 then create loggers for each facility:
 
 ```typescript
-import { openlog, createLogger, closelog } from "posix-syslog";
+import { openlog, createLogger, closelog } from "@trasherdk/posix-syslog";
 
 openlog("myapp", { pid: true, ndelay: true }, "user");
 
@@ -102,7 +102,7 @@ All exports are fully typed. Key types:
 ```typescript
 import type {
   SyslogPriority, SyslogFacility, SyslogOptions, SyslogMask, Logger,
-} from "posix-syslog";
+} from "@trasherdk/posix-syslog";
 ```
 
 ## License

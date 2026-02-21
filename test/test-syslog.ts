@@ -1,6 +1,6 @@
 import { describe, it } from "node:test";
 import assert from "node:assert/strict";
-import { openlog, closelog, syslog, setlogmask, createLogger } from "posix-syslog";
+import { openlog, closelog, syslog, setlogmask, createLogger } from "@trasherdk/posix-syslog";
 
 describe("syslog", () => {
   it("rejects openlog with missing arguments", () => {

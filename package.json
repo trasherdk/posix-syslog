@@ -1,6 +1,6 @@
 {
-  "name": "posix-syslog",
-  "version": "0.0.1",
+  "name": "@trasherdk/posix-syslog",
+  "version": "0.1.0",
   "description": "POSIX syslog bindings for Node.js",
   "license": "MIT",
   "type": "module",
@@ -26,7 +26,15 @@
     "logging",
     "system"
   ],
-  "os": ["linux", "darwin", "freebsd", "openbsd", "netbsd", "sunos", "aix"],
+  "os": [
+    "linux",
+    "darwin",
+    "freebsd",
+    "openbsd",
+    "netbsd",
+    "sunos",
+    "aix"
+  ],
   "engines": {
     "node": ">=18"
   },
