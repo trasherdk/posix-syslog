@@ -3,8 +3,8 @@ cmake_policy(SET CMP0042 NEW)
 
 project (syslog)
 
-set(CMAKE_CXX_STANDARD 14)
-add_definitions(-DNAPI_VERSION=7)
+set(CMAKE_CXX_STANDARD 17)
+add_definitions(-DNAPI_VERSION=9)
 
 include_directories(${CMAKE_JS_INC})
 

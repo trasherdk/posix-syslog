@@ -33,22 +33,22 @@
   "scripts": {
     "build:native": "cmake-js compile --target=syslog",
     "build:ts": "tsc",
-    "build": "npm run build:ts && npm run build:native",
+    "build": "tsc && cmake-js compile --target=syslog",
     "install": "cmake-js compile --target=syslog",
     "prepublishOnly": "tsc",
     "test": "node --test test/test-syslog.ts"
   },
   "dependencies": {
-    "cmake-js": "^7.2.0",
-    "node-addon-api": "^6.0.0"
+    "cmake-js": "^8.0.0",
+    "node-addon-api": "^8.5.0"
   },
   "devDependencies": {
-    "@types/node": "^22.0.0",
-    "typescript": "^5.7.0"
+    "@types/node": "^25.3.0",
+    "typescript": "^5.9.3"
   },
   "binary": {
     "napi_versions": [
-      7
+      9
     ]
   }
 }
