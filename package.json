@@ -1,0 +1,54 @@
+{
+  "name": "posix-syslog",
+  "version": "0.0.1",
+  "description": "POSIX syslog bindings for Node.js",
+  "license": "MIT",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist",
+    "src/*.cc",
+    "CMakeLists.txt"
+  ],
+  "keywords": [
+    "posix",
+    "syslog",
+    "openlog",
+    "closelog",
+    "setlogmask",
+    "logging",
+    "system"
+  ],
+  "os": ["linux", "darwin", "freebsd", "openbsd", "netbsd", "sunos", "aix"],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build:native": "cmake-js compile --target=syslog",
+    "build:ts": "tsc",
+    "build": "npm run build:ts && npm run build:native",
+    "install": "cmake-js compile --target=syslog",
+    "prepublishOnly": "tsc",
+    "test": "node --test test/test-syslog.ts"
+  },
+  "dependencies": {
+    "cmake-js": "^7.2.0",
+    "node-addon-api": "^6.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.7.0"
+  },
+  "binary": {
+    "napi_versions": [
+      7
+    ]
+  }
+}
