@@ -1,0 +1,3 @@
+onlyBuiltDependencies:
+  - '@trasherdk/posix-syslog'
+  - esbuild
