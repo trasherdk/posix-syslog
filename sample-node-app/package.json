@@ -7,6 +7,6 @@
     "start": "node index.js"
   },
   "dependencies": {
-    "@trasherdk/posix-syslog": "^0.1.0"
+    "@trasherdk/posix-syslog": "^0.1.1"
   }
 }

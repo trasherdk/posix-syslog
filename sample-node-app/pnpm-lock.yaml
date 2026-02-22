@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@trasherdk/posix-syslog':
-        specifier: ^0.1.0
-        version: 0.1.0
+        specifier: ^0.1.1
+        version: 0.1.1
 
 packages:
 
@@ -18,8 +18,8 @@ packages:
     resolution: {integrity: sha512-wgm9Ehl2jpeqP3zw/7mo3kRHFp5MEDhqAdwy1fTGkHAwnkGOVsgpvQhL8B5n1qlb01jV3n/bI0ZfZp5lWA1k4w==}
     engines: {node: '>=18.0.0'}
 
-  '@trasherdk/posix-syslog@0.1.0':
-    resolution: {integrity: sha512-MTjAQ/Ku4Kwh50QA2CtmeoRR+AEgJVLBQg8m3/3r9Pu+1w5WS2mIcTBUFHbM1a9ACp6TJKjVscfErFbeoGggNQ==}
+  '@trasherdk/posix-syslog@0.1.1':
+    resolution: {integrity: sha512-R/l2oFB8wzZrt6B1x+ehFP9SnbzYWpCPRiftHuJWvH35YmH0uoYJ0fPB506E6vrXNiU4xQPOO9aHTrZ8RYpPUA==}
     engines: {node: '>=18'}
     os: [linux, darwin, freebsd, openbsd, netbsd, sunos, aix]
 
@@ -184,7 +184,7 @@ snapshots:
     dependencies:
       minipass: 7.1.3
 
-  '@trasherdk/posix-syslog@0.1.0':
+  '@trasherdk/posix-syslog@0.1.1':
     dependencies:
       cmake-js: 8.0.0
       node-addon-api: 8.5.0
