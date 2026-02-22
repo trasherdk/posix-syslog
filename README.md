@@ -1,4 +1,4 @@
-# posix-syslog
+# @trasherdk/posix-syslog
 
 POSIX syslog bindings for Node.js — based on code from [node-posix](https://github.com/ohmu/node-posix).
 - Extracted from a fork [node-posix](https://github.com/ilb/node-posix)
